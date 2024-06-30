@@ -28,7 +28,7 @@ async function getTaskById() {
     return;
   }
 
-  const url = `http://127.0.0.1:3000/task/get?id_task=${taskId}`;
+  const url = `https://130.162.195.228/mhs714220007/task/get?id_task=${taskId}`;
   const token = localStorage.getItem("LOGIN");
 
   try {
@@ -79,7 +79,7 @@ document
 
 async function postData(judul, deskripsi, due_date, status) {
   const taskId = localStorage.getItem("currentTaskId");
-  const url = `http://127.0.0.1:3000/task/update?id_task=${taskId}`;
+  const url = `https://130.162.195.228/mhs714220007/task/update?id_task=${taskId}`;
   const token = localStorage.getItem("LOGIN");
 
   const newData = {

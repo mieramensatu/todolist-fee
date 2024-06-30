@@ -59,7 +59,7 @@ document
   });
 
 function getUserDetails(token) {
-  return fetch("http://127.0.0.1:3000/getme", {
+  return fetch("https://130.162.195.228/mhs714220007/getme", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

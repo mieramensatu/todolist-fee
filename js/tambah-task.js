@@ -91,7 +91,7 @@ function handleError(error) {
 async function getUserData() {
   const token = localStorage.getItem("LOGIN"); // Gunakan localStorage jika memang token disimpan di sana
   try {
-    const response = await fetch("http://127.0.0.1:3000/getme", {
+    const response = await fetch("https://130.162.195.228/mhs714220007/getme", {
       method: "GET",
       headers: {
         LOGIN: ` ${token}`, // Gunakan Bearer standard untuk token
